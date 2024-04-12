@@ -1,10 +1,10 @@
-import "./App.css";
+import Card from "./Card";
 
 function App() {
   return (
-    <>
-      <h1>React Project</h1>
-    </>
+    <main>
+      <Card />
+    </main>
   );
 }
 
