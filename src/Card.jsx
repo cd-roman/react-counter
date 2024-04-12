@@ -7,14 +7,14 @@ import Title from "./Title";
 
 export default function Card() {
   const [count, setCount] = useState(0);
-  const locked = count === 5 ? true : false;
+  const locked = count === 100 ? true : false;
 
   useEffect(() => {
     const handleKeydown = (event) => {
       if (event.code === "Space") {
         const newCount = count + 1;
-        if (newCount > 5) {
-          setCount(5);
+        if (newCount > 100) {
+          setCount(100);
           return;
         }
         setCount(newCount);
